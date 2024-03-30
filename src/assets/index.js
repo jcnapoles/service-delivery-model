@@ -29,6 +29,18 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import java from "./tech/java.svg";
+import spring from "./tech/spring.svg";
+import angular from "./tech/angular.svg";
+import hibernate from "./tech/hibernate.svg";
+import mysql from "./tech/mysql.svg";
+import postgresql from "./tech/postgresql.svg";
+import aws from "./tech/aws.svg";
+import jquery from "./tech/jquery.svg";
+import bootstrap from "./tech/bootstrap.svg";
+import php from "./tech/php.svg";
+import heroku from "./tech/heroku.svg";
+import jenkins from "./tech/jenkins.svg";
 
 export {
   logo,
@@ -44,6 +56,7 @@ export {
   figma,
   git,
   html,
+  java,
   javascript,
   mongodb,
   nodejs,
@@ -59,4 +72,15 @@ export {
   carrent,
   jobit,
   tripguide,
+  spring,
+  angular,
+  hibernate,
+  mysql,
+  postgresql,
+  aws,
+  jquery,
+  bootstrap,
+  php,
+  heroku,
+  jenkins,
 };

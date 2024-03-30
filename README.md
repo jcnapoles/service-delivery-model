@@ -1,2 +1,2 @@
 Cesar Napoles 
-Web developer & Analyst 
+Software Engineer | Full Stack Developer | Problem Solver 

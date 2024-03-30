@@ -7,6 +7,8 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
+const personalImageAlt = "Cesar Napoles"
+
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
@@ -43,17 +45,26 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
+      
+      <div className='flex items-center'> 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         I'm a skilled software developer with experience in Java and
-        JavaScript, and expertise in frameworks like React, Spring, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
+        JavaScript, and expertise in frameworks like Spring, Angular and
+        React. I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
-
+      </motion.p>    
+      <img 
+      width="200" 
+      height="200" 
+      src="/cesar_desktop.webp" 
+      alt={personalImageAlt} 
+      className="ml-14 order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20 "  />  
+      </div>
+                
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

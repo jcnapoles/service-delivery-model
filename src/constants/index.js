@@ -6,9 +6,9 @@ import {
   javascript,
   typescript,
   html,
+  java,
   css,
-  reactjs,
-  redux,
+  reactjs, 
   tailwind,
   nodejs,
   mongodb,
@@ -21,8 +21,16 @@ import {
   shopify,
   carrent,
   jobit,
-  tripguide,
-  threejs,
+  tripguide,  
+  spring,
+  angular,
+  hibernate,
+  jquery,
+  bootstrap,
+  php,
+  jenkins,
+  aws,
+  heroku,  
 } from "../assets";
 
 export const navLinks = [
@@ -35,6 +43,10 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "education",
+    title: "Education",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -42,28 +54,32 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Software Engineer",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Full Stack Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "QA Tester",
+    icon: mobile,
   },
+  {
+    title: "Software Analyst",
+    icon: creator,
+  },  
 ];
 
 const technologies = [
   {
+    name: "JAVA",
+    icon: java,
+  },
+  {
     name: "HTML 5",
     icon: html,
-  },
+  },  
   {
     name: "CSS 3",
     icon: css,
@@ -73,45 +89,39 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
+    name: "Spring",
+    icon: spring,
+  }, 
+  {
+    name: "Angular",
+    icon: angular,
+  }, 
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
+  },  
   {
     name: "Node JS",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Hibernate",
+    icon: hibernate,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "JQuery",
+    icon: jquery,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Bootstrap",
+    icon: bootstrap,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  
+
 ];
 
 const experiences = [
@@ -172,27 +182,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I thought it was impossible to make a website as beautiful as our product, but Cesar proved me wrong.",
+    name: "Lazaro Campoalegre",
+    designation: "EP Manager",
+    company: "AiFi Inc",
+    image: "/testimonials/lazaro.jpeg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "I've never met a web developer who truly cares about their clients' success like Cesar does.",
+    name: "Suneidis Vinent",
+    designation: "QA Engineer",
+    company: "Amaris",
+    image: "/testimonials/suneidis.jpeg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "After Cesar optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Erasmo Garcia",
+    designation: "Software Engineer",
+    company: "Glofox",
+    image: "/testimonials/erasmo.jpeg",
   },
 ];
 

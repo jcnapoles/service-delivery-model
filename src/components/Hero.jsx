@@ -14,15 +14,19 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
+       <div className="flex items-center">
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Cesar</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop web applications, user <br className='sm:block hidden' />
-            interfaces and 3D visuals.
-          </p>
-        </div>
+            <h1 className={`${styles.heroHeadText} text-white`}>
+              Hi, I'm <span className='text-[#915EFF]'>Cesar</span>
+            </h1>
+            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+              I develop web applications, user <br className='sm:block hidden' />
+              interfaces and APIs.
+            </p>   
+            
+          </div>
+          <img width="100" height="100" src='/cesar.webp' alt='Cesar Napoles' className='ml-14 order-1 object-cover  p-1 md:order-2 rotate-3 lg:p-2 lg:w-44 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20 ' style={{borderRadius: "50%"}} />
+       </div>
       </div>
 
       <ComputersCanvas />
