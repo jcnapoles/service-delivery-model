@@ -15,10 +15,9 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  uci,  
+  isern,
+  indra,
   carrent,
   jobit,
   tripguide,  
@@ -30,7 +29,8 @@ import {
   php,
   jenkins,
   aws,
-  heroku,  
+  heroku,
+  amaris,  
 } from "../assets";
 
 export const navLinks = [
@@ -41,11 +41,7 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
-  },
-  {
-    id: "education",
-    title: "Education",
-  },
+  },  
   {
     id: "contact",
     title: "Contact",
@@ -126,24 +122,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Software Developer",
+    company_name: "Universidad de las Ciencias Informaticas",
+    icon: uci,    
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Aug 2012 - Sep 2014",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -152,24 +135,11 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "QA Tester",
+    company_name: "Universidad de las Ciencias Informaticas",
+    icon: uci,    
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Sep 2014 - Aug 2016",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -177,6 +147,46 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
+  {
+    title: "Full Stack Developer",
+    company_name: "Indra",
+    icon: indra,
+    iconBg: "#E6DEDD",
+    date: "Aug 2016 - Jun 2018",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  }, 
+  {
+    title: "Software Engineer",
+    company_name: "Isern Patentes y Marcas",
+    icon: isern,
+    iconBg: "#E6DEDD",
+    date: "Aug 2018 - May 2021",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Amaris Consulting",
+    icon: amaris,
+    iconBg: "#E6DEDD",
+    date: "May 2021 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },    
+  
 ];
 
 const testimonials = [

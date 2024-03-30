@@ -61,8 +61,19 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+
+        <li>
+            <a
+              href="/CV_JulioCesarNapolesPuente_EN.pdf"
+              download
+              className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 text-[18px] font-medium cursor-pointertext-white text-[18px] font-medium cursor-pointer'
+            >
+              Download CV <sup>PDF</sup>
+            </a>
+          </li>
         </ul>
 
+        {/* Mobile Menu */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
