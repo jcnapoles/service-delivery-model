@@ -64,7 +64,7 @@ const Navbar = () => {
 
         <li>
             <a
-              href="/CV_JulioCesarNapolesPuente_EN.pdf"
+              href="/Cesar_Napoles_CV.pdf"
               download
               className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 text-[18px] font-medium cursor-pointertext-white text-[18px] font-medium cursor-pointer'
             >
