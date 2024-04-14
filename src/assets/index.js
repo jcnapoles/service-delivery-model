@@ -26,9 +26,9 @@ import indra from "./company/indra.svg";
 import amaris from "./company/amaris.svg";
 import isern from "./company/isern.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import myportfolio from "./myportfolio.jpg";
+import investanalysis from "./investanalysis.jpg";
+import interviewquestions from "./interviewquestions.jpg";
 import java from "./tech/java.svg";
 import spring from "./tech/spring.svg";
 import angular from "./tech/angular.svg";
@@ -69,9 +69,9 @@ export {
   indra,
   amaris,
   isern,
-  carrent,
-  jobit,
-  tripguide,
+  myportfolio,
+  investanalysis,
+  interviewquestions,  
   spring,
   angular,
   hibernate,

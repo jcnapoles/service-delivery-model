@@ -18,9 +18,9 @@ import {
   uci,  
   isern,
   indra,
-  carrent,
-  jobit,
-  tripguide,  
+  myportfolio,
+  investanalysis,
+  interviewquestions,  
   spring,
   angular,
   hibernate,
@@ -128,10 +128,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Aug 2012 - Sep 2014",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining web applications using PHP and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",      
+      "Development of tools to manage components (services and dependencies)",
+      "Creating database schemas and managing relational databases like MySQL, PostgreSQL",
     ],
   },
   {
@@ -141,10 +141,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Sep 2014 - Aug 2016",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Performing manual testing activities such as functional testing, regression testing, and exploratory testing",
+      "Writing automated test scripts using tools like Selenium WebDriver",
+      "Validating API functionality through techniques like endpoint testing, request and response validation, and data manipulation testing.",
+      "Designing and executing performance testing scenarios using tools like JMeter",
     ],
   },
   {
@@ -154,10 +154,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Aug 2016 - Jun 2018",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Analysis, design, and development of business applications.",
+      "Technical and functional consulting.",
+      "Writing complex SQL queries to extract insights from structured databases.",
+      "Developing data pipelines to ingest, process, and analyze large volumes of data using technologies like Hadoop MapReduce."
     ],
   }, 
   {
@@ -168,9 +168,9 @@ const experiences = [
     date: "Aug 2018 - May 2021",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Technical and functional consulting.",
+      "Development, maintenance and migration of legacy applications, JAVA, Angular, Spring, React.js",
+      "Strong problem-solving abilities and the ability to troubleshoot complex data processing issues",
     ],
   },
   {
@@ -180,10 +180,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "May 2021 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Designing and developing responsive user interfaces using HTML, CSS, and JavaScript frameworks such as React.js and Angular",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Familiarity with containerization technologies like Docker and orchestration tools like Kubernetes.",
     ],
   },    
   
@@ -196,6 +196,7 @@ const testimonials = [
     name: "Lazaro Campoalegre",
     designation: "EP Manager",
     company: "AiFi Inc",
+    linkedin: "https://www.linkedin.com/in/lazarocampoalegre",
     image: "/testimonials/lazaro.jpeg",
   },
   {
@@ -204,6 +205,7 @@ const testimonials = [
     name: "Suneidis Vinent",
     designation: "QA Engineer",
     company: "Amaris",
+    linkedin: "https://www.linkedin.com/in/svinent",
     image: "/testimonials/suneidis.jpeg",
   },
   {
@@ -212,73 +214,77 @@ const testimonials = [
     name: "Erasmo Garcia",
     designation: "Software Engineer",
     company: "Glofox",
+    linkedin: "https://www.linkedin.com/in/erasmogarciaglez",
     image: "/testimonials/erasmo.jpeg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "My Portfolio",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An 3D online portfolio that showcases my skills and experience as a web developer. It includes a brief introduction, a list of my projects, and a contact form.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "three.js",
+        color: "black-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "javascript",
+        color: "yellow-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: myportfolio,
+    link: "https://cesarnapoles.com",
+    source_code_link: "https://github.com/jcnapoles/3d_portfolio_cesar",
   },
   {
-    name: "Job IT",
+    name: "Invest Analysis",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that allows users to analyze the performance of their investments. It includes features like a stock screener, a portfolio tracker, and a news feed.",
     tags: [
+      {
+        name: "java",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "spring",
+        color: "green-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
       },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: investanalysis,
+    link: "https://www.investanalysis.site",
+    source_code_link: "",
   },
   {
-    name: "Trip Guide",
+    name: "Interview Questions",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A web application that helps users prepare for technical interviews. It includes a list of common interview questions, a code editor, and a timer.",
     tags: [
       {
         name: "nextjs",
-        color: "blue-text-gradient",
+        color: "black-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "typescript",
+        color: "blue-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: interviewquestions,
+    link: "https://interview-fullstack.vercel.app",
+    source_code_link: "https://github.com/jcnapoles/interview-docs",
   },
 ];
 

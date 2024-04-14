@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -102,6 +104,15 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+               <li>
+                  <a
+                    href="/Cesar_Napoles_CV.pdf"
+                    download
+                    className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 text-[18px] font-medium cursor-pointertext-white text-[18px] font-medium cursor-pointer'
+                  >
+                   <FontAwesomeIcon icon={faDownload} /> CV <sup>PDF</sup>
+                  </a>
+                </li>
             </ul>
           </div>
         </div>

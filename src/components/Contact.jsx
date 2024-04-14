@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { FaLinkedin, FaSkype, FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   const formRef = useRef();
@@ -87,7 +88,32 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-
+        <div className="mt-5 flex gap-4 justify-center">
+          <a
+            href="https://linkedin.com/in/jcnapoles"
+            target="_blank"
+            rel="noopener"
+            className="flex items-center transition md:justify-center md:hover:scale-105"
+          >
+            <FaLinkedin className="mr-2 text-2xl" />     
+          </a>
+          <a
+            href="skype:live:juliocesarnapolespuente?chat"
+            target="_blank"
+            rel="noopener"
+            className="flex items-center transition md:justify-center md:hover:scale-105"
+          >
+            <FaSkype className="mr-2 text-2xl" />
+          </a>
+          <a
+            href="https://github.com/jcnapoles"
+            target="_blank"
+            rel="noopener"
+            className="flex items-center transition md:justify-center md:hover:scale-105"
+          >
+            <FaGithub className="mr-2 text-2xl" />
+          </a>
+        </div>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -118,7 +144,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
-              rows={7}
+              rows={4}
               name='message'
               value={form.message}
               onChange={handleChange}
@@ -140,7 +166,7 @@ const Contact = () => {
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
             {loading ? "Sending..." : "Send"}
-          </button>
+          </button>          
         </form>
       </motion.div>
 
