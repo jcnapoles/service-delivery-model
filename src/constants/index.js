@@ -182,7 +182,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Cesar optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After Cesar optimized our website, our traffic increased by 50%. We can't thank him enough!",
     name: "Erasmo Garcia",
     designation: "Software Engineer",
     company: "Glofox",
