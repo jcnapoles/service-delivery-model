@@ -71,15 +71,7 @@ const technologies = [
   {
     name: "JAVA",
     icon: java,
-  },
-  {
-    name: "HTML 5",
-    icon: html,
   },  
-  {
-    name: "CSS 3",
-    icon: css,
-  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -89,34 +81,14 @@ const technologies = [
     icon: spring,
   }, 
   {
+    name: "React JS",
+    icon: reactjs,
+  }, 
+  {
     name: "Angular",
     icon: angular,
   }, 
-  {
-    name: "React JS",
-    icon: reactjs,
-  },  
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "Hibernate",
-    icon: hibernate,
-  },
-  {
-    name: "JQuery",
-    icon: jquery,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "Bootstrap",
-    icon: bootstrap,
-  },
-  
+    
 
 ];
 
