@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-
+import Carousel from '@itseasy21/react-elastic-carousel';
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -52,22 +52,66 @@ const FeedbackCard = ({
 );
 
 const Feedbacks = () => {
+  const breakPoints = [
+    { width: 1, itemsToShow: 1, itemsToScroll: 1 },
+    { width: 720, itemsToShow: 2, itemsToScroll: 1 },
+    { width: 1080, itemsToShow: 3, itemsToScroll: 1 },
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    const totalItems = testimonials.length;
+    const interval = setInterval(() => {
+      if (currentSlide === totalItems - 1) {
+        setCurrentSlide(0);
+        carouselRef.current.goTo(0);
+      } else {
+        setCurrentSlide((prevSlide) => prevSlide + 1);
+        carouselRef.current.goTo(currentSlide + 1);
+      }
+    }, 5000); // Adjust the duration between slides as needed (8 seconds in this example)
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentSlide]);
+
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
-      <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
-      >
-        <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
-        </motion.div>
+    <>
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} text-center`}>What others say</p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Testimonials.</h2>
+      </motion.div>
+      <div className={`mt-12 bg-black-100 rounded-[20px]`}>
+
+        <div className={`mt-12 bg-tertiary rounded-2xl min-h-[300px]`}>
+          <div style={{ height: '20px' }}></div>
+
+          <Carousel
+            ref={carouselRef}
+            isRTL={false}
+            pagination={true}
+            transitionMs={2000} // Set the duration for each item transition
+            enableAutoPlay={false} // Disable auto play
+            enableTilt={false}
+            breakPoints={breakPoints}
+            showArrows={false}
+            focusOnSelect={false}
+            itemPadding={[0, 1]}
+            initialActiveIndex={currentSlide}
+          >
+            {testimonials.map((testimonial, index) => (
+              <div key={testimonial.name}>
+                <FeedbackCard index={index} {...testimonial} />
+              </div>
+            ))}
+          </Carousel>
+          <div style={{ height: '20px' }}></div>
+        </div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
-        {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
-        ))}
-      </div>
-    </div>
+    </>
   );
 };
 
