@@ -220,20 +220,24 @@ const projects = [
       "Web application that allows users to analyze the performance of their investments. It includes features like a stock screener, a portfolio tracker, and a news feed.",
     tags: [
       {
-        name: "java",
-        color: "orange-text-gradient",
+        name: "typescript",
+        color: "blue-text-gradient",
       },
       {
-        name: "spring",
-        color: "green-text-gradient",
+        name: "tailwind",
+        color: "pink-text-gradientt",
       },
       {
         name: "react",
         color: "blue-text-gradient",
       },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
     ],
     image: investanalysis,
-    link: "https://www.investanalysis.site",
+    link: "https://invest-analysis-vercel.vercel.app",
     source_code_link: "",
   },
   {
