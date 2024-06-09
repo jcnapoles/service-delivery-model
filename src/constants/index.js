@@ -237,7 +237,7 @@ const projects = [
       },
     ],
     image: investanalysis,
-    link: "https://invest-analysis-vercel.vercel.app",
+    link: "https://www.investanalysis.site",
     source_code_link: "",
   },
   {
