@@ -26,9 +26,10 @@ import indra from "./company/indra.svg";
 import amaris from "./company/amaris.svg";
 import isern from "./company/isern.png";
 
-import myportfolio from "./myportfolio.jpg";
-import investanalysis from "./investanalysis.jpg";
-import interviewquestions from "./interviewquestions.jpg";
+import myportfolio from "./projects/myportfolio.jpg";
+import investanalysis from "./projects/investanalysis.jpg";
+import interviewquestions from "./projects/interviewquestions.jpg";
+import suneidisportfolio from "./projects/suneidisportfolio.jpg";
 import java from "./tech/java.svg";
 import spring from "./tech/spring.svg";
 import angular from "./tech/angular.svg";
@@ -71,7 +72,8 @@ export {
   isern,
   myportfolio,
   investanalysis,
-  interviewquestions,  
+  interviewquestions, 
+  suneidisportfolio, 
   spring,
   angular,
   hibernate,

@@ -3,35 +3,21 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  typescript,
-  html,
-  java,
-  css,
-  reactjs, 
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
+  javascript,  
   uci,  
   isern,
-  indra,
-  myportfolio,
-  investanalysis,
-  interviewquestions,  
+  indra, 
   spring,
   angular,
-  hibernate,
-  jquery,
-  bootstrap,
-  php,
-  jenkins,
-  aws,
-  heroku,
-  amaris,  
+  java,
+  reactjs, 
+  amaris,
+  myportfolio,
+  investanalysis,
+  interviewquestions,
+  suneidisportfolio,  
 } from "../assets";
+
 
 export const navLinks = [
   {
@@ -207,7 +193,7 @@ const projects = [
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
     ],
     image: myportfolio,
@@ -225,7 +211,7 @@ const projects = [
       },
       {
         name: "tailwind",
-        color: "pink-text-gradientt",
+        color: "blue-text-gradientt",
       },
       {
         name: "react",
@@ -239,6 +225,28 @@ const projects = [
     image: investanalysis,
     link: "https://www.investanalysis.site",
     source_code_link: "",
+  },
+  {
+    name: "Suneidis' Portfolio",
+    description:
+      "An online portfolio that showcases my skills and experience as a web developer. It includes a brief introduction, a list of projects, and a contact form.",
+    tags: [
+      {
+        name: "astro",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: suneidisportfolio,
+    link: "https://suneidis.com",
+    source_code_link: "https://github.com/jcnapoles/suneidis",
   },
   {
     name: "Interview Questions",

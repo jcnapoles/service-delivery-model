@@ -44,9 +44,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         > 
-        <img src="/favicon.png" alt='logo' className='w-9 h-9 object-contain' />         
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Cesar Napoles &nbsp;
+        <img src={logo} alt='logo' className='w-9 h-9 object-contain' />          
+          <div className='w-1 h-9 bg-white'></div>       
+          <p className='text-white text-[36px] font-bold cursor-pointer flex '>
+            Cesar Napoles
            
           </p>
         </Link>
