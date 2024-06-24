@@ -214,7 +214,7 @@ const projects = [
         color: "blue-text-gradientt",
       },
       {
-        name: "react",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
