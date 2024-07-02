@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import confetti from 'canvas-confetti';
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -28,13 +29,26 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) => { 
     e.preventDefault();
 
     if (!form.name || !form.email || !form.message) {
       setNotification({ message: 'Please fill in all fields.', type: 'error' });
       return;
     }
+     
+    const confettiConfig = {
+      angle: 45, // Ángulo en el que se disparará el confetti
+      spread: 5000, // Qué tan lejos se esparcirá el confetti
+      startVelocity: 50, // Qué tan rápido saldrá el confetti
+      elementCount: 70, // Cantidad de piezas de confetti
+      dragFriction: 0.4, // Fricción que ralentiza el movimiento del confetti
+      duration: 10000, // Cuánto tiempo (en milisegundos) estará el confetti en el aire
+      stagger: 4, // Retraso entre cada pieza de confetti
+      width: "100px", // Ancho de cada pieza de confetti
+      height: "100px", // Altura de cada pieza de confetti
+      colors: ['#a864fd', '#29cdff', '#78ff44', '#ff718d', '#fdff6a'], // Colores del confetti
+    };
     setLoading(true);
     let message = `
       Name: ${form.name}
@@ -58,7 +72,7 @@ const Contact = () => {
         () => {
           setLoading(false);
           setNotification({ message: "Thank you. I will get back to you as soon as possible.", type: 'success' });
-
+          confetti(confettiConfig);
           setForm({
             name: "",
             email: "",

@@ -15,7 +15,8 @@ import {
   myportfolio,
   investanalysis,
   interviewquestions,
-  suneidisportfolio,  
+  suneidisportfolio,
+  tictactoe,  
 } from "../assets";
 
 
@@ -247,6 +248,28 @@ const projects = [
     image: suneidisportfolio,
     link: "https://suneidis.com",
     source_code_link: "https://github.com/jcnapoles/suneidis",
+  },
+  {
+    name: "Tic Tac Toe Game",
+    description:
+      "A simple tic-tac-toe game that allows two players to play against each other. It includes features like a score tracker and a restart button.",
+    tags: [
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: tictactoe,
+    link: "https://tic-tac-toe.cesarnapoles.com/",
+    source_code_link: "https://github.com/jcnapoles/Tic-Tac-Toe",
   },
   {
     name: "Interview Questions",

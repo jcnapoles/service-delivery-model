@@ -30,6 +30,7 @@ import myportfolio from "./projects/myportfolio.jpg";
 import investanalysis from "./projects/investanalysis.jpg";
 import interviewquestions from "./projects/interviewquestions.jpg";
 import suneidisportfolio from "./projects/suneidisportfolio.jpg";
+import tictactoe from "./projects/tic-tac-toe.jpg";
 import java from "./tech/java.svg";
 import spring from "./tech/spring.svg";
 import angular from "./tech/angular.svg";
@@ -73,7 +74,8 @@ export {
   myportfolio,
   investanalysis,
   interviewquestions, 
-  suneidisportfolio, 
+  suneidisportfolio,
+  tictactoe, 
   spring,
   angular,
   hibernate,
