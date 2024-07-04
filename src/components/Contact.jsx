@@ -7,7 +7,6 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { FaLinkedin, FaSkype, FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   const formRef = useRef();

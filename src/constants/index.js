@@ -33,6 +33,7 @@ const experiences = [
       "The owners of the Pre-sales and the Delivery processes should work together seamlessly, but they are distinct roles and have different procedures.",      
       "The pre-sales process plays a critical role in identifying and capitalizing on opportunities with new and existing partners and accelerating the sales process.",      
     ],
+    items:  [],
   },
   {
     title: `"Go" from the Client`,
@@ -44,6 +45,7 @@ const experiences = [
       "After the deal is closed, pre-sales works with the delivery team to ensure successful implementation of the proposal, and manage customer needs throughout the ongoing relationship.",
       "Pre-sales profiles continue to work behind the scenes to follow up with the customer and identify future opportunities for growth, improving client satisfaction and increasing retention.",      
     ],
+    items:  [],
   },
   {
     title: "Project Start",
@@ -56,6 +58,7 @@ const experiences = [
       "The beginning of a project is often a crucial time to set up the project for success.",
       "We have located two critical initial actions that lead to the project management stages of Communication, Scope and Control.",      
     ],
+    items:  [{title: "External: Client Validation", files:["Project-Charter-Template-1.5.docx", "MeetingMinutes.docx"]}, {title: "Internal: Kick-off", files:["MeetingMinutes.docx"]}],
   }, 
   {
     title: "Communication plan",
@@ -67,6 +70,7 @@ const experiences = [
       "A communication plan is a policy-driven approach to providing stakeholders with information.",
       "The plan formally defines who should be given specific information, when that information should be delivered and what communication channels will be used to deliver the information.",      
     ],
+    items:  [],
   },
   {
     title: "Scope plan",
@@ -78,6 +82,7 @@ const experiences = [
       "Project scope planning is concerned with the definition of all the work needed to successfully meet the project objectives.",
       "As the project progresses, you need to keep that scope up to date and written down in the project’s scope management plan.",     
     ],
+    items:  [],
   },
   {
     title: "Control Plan",
@@ -89,6 +94,7 @@ const experiences = [
       "Project control contains the tools and procedures to provide the right information at the right time, to enable to correct decisions to be made.",
       "Control comprises tracking performance against agreed plans and taking the corrective action required to meet defined objectives.",     
     ],
+    items:  [],
   }, 
   {
     title: "Execution",
@@ -101,6 +107,7 @@ const experiences = [
       "The implementation of the previous rage of project management processes (Communication, Scope and Control) will enable monitoring and controlling the project.",     
       "These will provide tools to manage time, cost, quality, change, risks and issues.",   
     ],
+    items:  [],
   },     
   
 ];

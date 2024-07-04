@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -42,7 +42,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         > 
-        <img src={logo} alt='logo' className='w-22 h-12 object-contain' />          
+                 
           <div className='w-1 h-9 bg-white'></div>       
           <p className='text-white text-[12px] cursor-pointer flex md:text-[24px]'>
             Service Delivery Model          

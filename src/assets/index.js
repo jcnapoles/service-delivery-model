@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import menu from "./menu.svg";
@@ -12,8 +11,7 @@ import scope from "./company/scope.png";
 import control from "./company/control.png";
 import execution from "./company/execution.png";
 
-export {
-  logo, 
+export { 
   mobile,
   web,
   menu,

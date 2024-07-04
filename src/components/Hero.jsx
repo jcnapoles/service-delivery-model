@@ -22,7 +22,7 @@ const Hero = () => {
             The aim of this document is to provide <br className='sm:block hidden' />
             a complete guide to all the <br className='sm:block hidden' />
             activities, plans, and processes <br className='sm:block hidden' />
-            that Amaris uses to design, deliver <br className='sm:block hidden' />
+            that we uses to design, deliver <br className='sm:block hidden' />
             and manage service delivery for our customers.            
             </p>   
            

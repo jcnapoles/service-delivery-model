@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState} from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -11,8 +11,18 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { FaAngleDown, FaAngleUp, FaFileAlt, FaDownload } from 'react-icons/fa';
 
 const ExperienceCard = ({ experience }) => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleItem = (index) => {
+    if (openIndex === index) {
+      setOpenIndex(null);
+    } else {
+      setOpenIndex(index);
+    }
+  };
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -52,6 +62,42 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
+      
+      <div className='mt-5 ml-5 space-y-2 '>
+        {experience.items?.map((item, index) => (
+          <div key={`experience-point-${index}`} className='border-2 rounded-md'>
+            <button
+              className='flex justify-between items-center w-full text-left text-white-100 text-[14px] p-3 tracking-wider'
+              onClick={() => toggleItem(index)}
+            >
+              <div className='flex justify-between'>
+                {openIndex === index ? <FaAngleUp className='mr-2'/> : <FaAngleDown className='mr-2'/>}
+                {item.title}                
+              </div>
+            </button>
+            {openIndex === index && (
+              <div className='text-white-100 text-[14px] p-3 tracking-wider'>
+              <ul>
+                {item.files.map((file, fileIndex) => (
+                  <li key={`file-li-${fileIndex}`} className='mb-2 ml-10'> 
+                    <a
+                      href={`/documents/${file}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='flex items-center text-blue-400 underline'
+                    >
+                      <FaDownload className='mr-2' />
+                      {file}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            )}
+          </div>
+        ))}
+    </div>
+      
     </VerticalTimelineElement>
   );
 };
