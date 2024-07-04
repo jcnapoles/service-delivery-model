@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import Badge from "./Badge";
 
 const Hero = () => {
   return (
@@ -16,32 +15,26 @@ const Hero = () => {
 
        <div className="flex flex-col justify-center items-center mt-5">
         <div>
-            <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm <span className='text-[#915EFF]'>Cesar</span>
+            <h1 className={`${styles.heroHeadText} text-white justify-center items-center`}>
+              Hi, <span className='text-[#915EFF]'>Manager</span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I develop web applications, user <br className='sm:block hidden' />
-              interfaces and microservices.
+            <p className={`${styles.heroSubText} mt-2 text-white-100 items-center`}>
+            The aim of this document is to provide <br className='sm:block hidden' />
+            a complete guide to all the <br className='sm:block hidden' />
+            activities, plans, and processes <br className='sm:block hidden' />
+            that Amaris uses to design, deliver <br className='sm:block hidden' />
+            and manage service delivery for our customers.            
             </p>   
            
           </div>
-          <div className="" >
-            <img width="200" height="200" src='/cesar.webp' alt='Cesar Napoles' className='mt-5 order-1 object-cover  p-1 md:order-2 rotate-3 lg:p-2 lg:w-44 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20 ' style={{borderRadius: "50%"}} />
-            <a
-              href="/#contact"      
-              className="mt-10 ml-5 hover:bg-gray-200 transition-colors duration-200"
-              title="Contact me"
-            >          
-              <Badge>Available to work! 🔗</Badge>
-            </a>
-          </div>           
+                    
        </div>   
       </div>
       
    
 
       <div className='absolute xs:bottom-5 bottom-24 w-full flex justify-center items-center'>
-        <a href='#about'>
+        <a href='#start'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{

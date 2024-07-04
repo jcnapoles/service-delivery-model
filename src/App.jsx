@@ -1,38 +1,30 @@
 import { BrowserRouter } from "react-router-dom";
-import { useEffect } from 'react';
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { Experience, Hero, Navbar, Contact } from "./components";
+import { StarsCanvas } from "./components/canvas";
 
-function useFavicon() {
-  useEffect(() => {
-    const link = document.querySelector("link[rel*='icon']");
-    const theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-
-    if (theme === 'dark') {
-      link.href = '/favicon-white.svg';
-    } else {
-      link.href = '/favicon-black.svg';
-    }
-  }, []);
-}
 
 const App = () => {
-  useFavicon();
+  
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <Hero />
+        <div className='relative z-0'>
+        <Navbar />
+        <Hero />
+          <StarsCanvas />
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
+          
+        </div> 
+        <div className='relative z-0'>
+          <Experience /> 
+          <StarsCanvas />
+        </div>         
+       
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
-        </div>
+        </div>              
       </div>
     </BrowserRouter>
   );

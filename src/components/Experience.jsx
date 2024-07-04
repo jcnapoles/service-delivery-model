@@ -61,10 +61,12 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>
-          What I have done so far
+        For each stage of the Delivery Model you will find a set of template
+            files to execute that stage, along with the instructions to fill in the
+            document(s). 
         </p>
         <h2 className={`${styles.sectionHeadText}`}>
-          Work Experience.
+          Service Delivery Model
         </h2>
       </motion.div>
 
@@ -82,4 +84,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "start");

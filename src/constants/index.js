@@ -1,298 +1,108 @@
-import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,  
-  uci,  
-  isern,
-  indra, 
-  spring,
-  angular,
-  java,
-  reactjs, 
-  amaris,
-  myportfolio,
-  investanalysis,
-  interviewquestions,
-  suneidisportfolio,
-  tictactoe,  
+import {    
+  presales,
+  start,
+  go,
+  communication,
+  scope, 
+  control,
+  execution,
 } from "../assets";
 
 
 export const navLinks = [
-  {
-    id: "about",
-    title: "About",
+    {
+    id: "start",
+    title: "Start",
   },
-  {
-    id: "work",
-    title: "Work",
-  },  
   {
     id: "contact",
     title: "Contact",
   },
-];
-
-const services = [
-  {
-    title: "Software Engineer",
-    icon: web,
-  },
-  {
-    title: "Full Stack Developer",
-    icon: backend,
-  },
-  {
-    title: "QA Tester",
-    icon: mobile,
-  },
-  {
-    title: "Software Analyst",
-    icon: creator,
-  },  
-];
-
-const technologies = [
-  {
-    name: "JAVA",
-    icon: java,
-  },  
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "Spring",
-    icon: spring,
-  }, 
-  {
-    name: "React JS",
-    icon: reactjs,
-  }, 
-  {
-    name: "Angular",
-    icon: angular,
-  }, 
-    
-
+ 
 ];
 
 const experiences = [
   {
-    title: "Software Developer",
-    company_name: "Universidad de las Ciencias Informaticas",
-    icon: uci,    
+    title: "Presales",
+    company_name: "",
+    icon: presales,    
     iconBg: "#E6DEDD",
-    date: "Aug 2012 - Sep 2014",
+    date: "",
     points: [
-      "Developing and maintaining web applications using PHP and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",      
-      "Development of tools to manage components (services and dependencies)",
-      "Creating database schemas and managing relational databases like MySQL, PostgreSQL",
+      "The pre-sales process covers all the activities that take place before closing a project.",
+      "The owners of the Pre-sales and the Delivery processes should work together seamlessly, but they are distinct roles and have different procedures.",      
+      "The pre-sales process plays a critical role in identifying and capitalizing on opportunities with new and existing partners and accelerating the sales process.",      
     ],
   },
   {
-    title: "QA Tester",
-    company_name: "Universidad de las Ciencias Informaticas",
-    icon: uci,    
+    title: `"Go" from the Client`,
+    company_name: "Client X",
+    icon: go,    
     iconBg: "#E6DEDD",
-    date: "Sep 2014 - Aug 2016",
+    date: "",
     points: [
-      "Performing manual testing activities such as functional testing, regression testing, and exploratory testing",
-      "Writing automated test scripts using tools like Selenium WebDriver",
-      "Validating API functionality through techniques like endpoint testing, request and response validation, and data manipulation testing.",
-      "Designing and executing performance testing scenarios using tools like JMeter",
+      "After the deal is closed, pre-sales works with the delivery team to ensure successful implementation of the proposal, and manage customer needs throughout the ongoing relationship.",
+      "Pre-sales profiles continue to work behind the scenes to follow up with the customer and identify future opportunities for growth, improving client satisfaction and increasing retention.",      
     ],
   },
   {
-    title: "Full Stack Developer",
-    company_name: "Indra",
-    icon: indra,
+    title: "Project Start",
+    company_name: "",
+    icon: start,
     iconBg: "#E6DEDD",
-    date: "Aug 2016 - Jun 2018",
+    date: "",
     points: [
-      "Analysis, design, and development of business applications.",
-      "Technical and functional consulting.",
-      "Writing complex SQL queries to extract insights from structured databases.",
-      "Developing data pipelines to ingest, process, and analyze large volumes of data using technologies like Hadoop MapReduce."
+      "The ultimate goal of project delivery management is to perform and complete projects successfully - on time, under budget and within customer expectations",
+      "The beginning of a project is often a crucial time to set up the project for success.",
+      "We have located two critical initial actions that lead to the project management stages of Communication, Scope and Control.",      
     ],
   }, 
   {
-    title: "Software Engineer",
-    company_name: "Isern Patentes y Marcas",
-    icon: isern,
+    title: "Communication plan",
+    company_name: "",
+    icon: communication,
     iconBg: "#E6DEDD",
-    date: "Aug 2018 - May 2021",
+    date: "",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Technical and functional consulting.",
-      "Development, maintenance and migration of legacy applications, JAVA, Angular, Spring, React.js",
-      "Strong problem-solving abilities and the ability to troubleshoot complex data processing issues",
+      "A communication plan is a policy-driven approach to providing stakeholders with information.",
+      "The plan formally defines who should be given specific information, when that information should be delivered and what communication channels will be used to deliver the information.",      
     ],
   },
   {
-    title: "Full Stack Developer",
-    company_name: "Amaris Consulting",
-    icon: amaris,
+    title: "Scope plan",
+    company_name: "",
+    icon: scope,
     iconBg: "#E6DEDD",
-    date: "May 2021 - Present",
+    date: "",
     points: [
-      "Designing and developing responsive user interfaces using HTML, CSS, and JavaScript frameworks such as React.js and Angular",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Familiarity with containerization technologies like Docker and orchestration tools like Kubernetes.",
+      "Project scope planning is concerned with the definition of all the work needed to successfully meet the project objectives.",
+      "As the project progresses, you need to keep that scope up to date and written down in the project’s scope management plan.",     
     ],
-  },    
+  },
+  {
+    title: "Control Plan",
+    company_name: "",
+    icon: control,
+    iconBg: "#E6DEDD",
+    date: "",
+    points: [
+      "Project control contains the tools and procedures to provide the right information at the right time, to enable to correct decisions to be made.",
+      "Control comprises tracking performance against agreed plans and taking the corrective action required to meet defined objectives.",     
+    ],
+  }, 
+  {
+    title: "Execution",
+    company_name: "",
+    icon: execution,
+    iconBg: "#E6DEDD",
+    date: "",
+    points: [
+      "The Executing Process Group consists of those processes performed to complete the work defined in the project management plan to satisfy the project specifications.",
+      "The implementation of the previous rage of project management processes (Communication, Scope and Control) will enable monitoring and controlling the project.",     
+      "These will provide tools to manage time, cost, quality, change, risks and issues.",   
+    ],
+  },     
   
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Cesar proved me wrong.",
-    name: "Lazaro Campoalegre",
-    designation: "EP Manager",
-    company: "AiFi Inc",
-    linkedin: "https://www.linkedin.com/in/lazarocampoalegre",
-    image: "/testimonials/lazaro.jpeg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Cesar does.",
-    name: "Suneidis Vinent",
-    designation: "QA Engineer",
-    company: "Amaris",
-    linkedin: "https://www.linkedin.com/in/svinent",
-    image: "/testimonials/suneidis.jpeg",
-  },
-  {
-    testimonial:
-      "After Cesar optimized our website, our traffic increased by 50%. We can't thank him enough!",
-    name: "Erasmo Garcia",
-    designation: "Software Engineer",
-    company: "Glofox",
-    linkedin: "https://www.linkedin.com/in/erasmogarciaglez",
-    image: "/testimonials/erasmo.jpeg",
-  },
-];
-
-const projects = [
-  {
-    name: "My Portfolio",
-    description:
-      "An 3D online portfolio that showcases my skills and experience as a web developer. It includes a brief introduction, a list of my projects, and a contact form.",
-    tags: [
-      {
-        name: "three.js",
-        color: "black-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: myportfolio,
-    link: "https://cesarnapoles.com",
-    source_code_link: "https://github.com/jcnapoles/3d_portfolio_cesar",
-  },
-  {
-    name: "Invest Analysis",
-    description:
-      "Web application that allows users to analyze the performance of their investments. It includes features like a stock screener, a portfolio tracker, and a news feed.",
-    tags: [
-      {
-        name: "typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "blue-text-gradientt",
-      },
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: investanalysis,
-    link: "https://www.investanalysis.site",
-    source_code_link: "",
-  },
-  {
-    name: "Suneidis' Portfolio",
-    description:
-      "An online portfolio that showcases my skills and experience as a web developer. It includes a brief introduction, a list of projects, and a contact form.",
-    tags: [
-      {
-        name: "astro",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: suneidisportfolio,
-    link: "https://suneidis.com",
-    source_code_link: "https://github.com/jcnapoles/suneidis",
-  },
-  {
-    name: "Tic Tac Toe Game",
-    description:
-      "A simple tic-tac-toe game that allows two players to play against each other. It includes features like a score tracker and a restart button.",
-    tags: [
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: tictactoe,
-    link: "https://tic-tac-toe.cesarnapoles.com/",
-    source_code_link: "https://github.com/jcnapoles/Tic-Tac-Toe",
-  },
-  {
-    name: "Interview Questions",
-    description:
-      "A web application that helps users prepare for technical interviews. It includes a list of common interview questions, a code editor, and a timer.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "black-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: interviewquestions,
-    link: "https://interview-fullstack.vercel.app",
-    source_code_link: "https://github.com/jcnapoles/interview-docs",
-  },
-];
-
-export { services, technologies, experiences, testimonials, projects };
+export { experiences };

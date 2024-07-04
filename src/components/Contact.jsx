@@ -100,34 +100,9 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-transparent-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
+        <p className={styles.sectionSubText}>If you locate any error in this website, please, send your comments</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-        <div className="mt-5 flex gap-4 justify-center">
-          <a
-            href="https://linkedin.com/in/jcnapoles"
-            target="_blank"
-            rel="noopener"
-            className="flex items-center transition md:justify-center md:hover:scale-105"
-          >
-            <FaLinkedin className="mr-2 text-2xl" />     
-          </a>
-          <a
-            href="skype:live:juliocesarnapolespuente?chat"
-            target="_blank"
-            rel="noopener"
-            className="flex items-center transition md:justify-center md:hover:scale-105"
-          >
-            <FaSkype className="mr-2 text-2xl" />
-          </a>
-          <a
-            href="https://github.com/jcnapoles"
-            target="_blank"
-            rel="noopener"
-            className="flex items-center transition md:justify-center md:hover:scale-105"
-          >
-            <FaGithub className="mr-2 text-2xl" />
-          </a>
-        </div>
+        
         <form
           ref={formRef}
           onSubmit={handleSubmit}

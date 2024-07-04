@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -44,11 +42,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         > 
-        <img src={logo} alt='logo' className='w-9 h-9 object-contain' />          
+        <img src={logo} alt='logo' className='w-22 h-12 object-contain' />          
           <div className='w-1 h-9 bg-white'></div>       
-          <p className='text-white text-[36px] font-bold cursor-pointer flex '>
-            Cesar Napoles
-           
+          <p className='text-white text-[12px] cursor-pointer flex md:text-[24px]'>
+            Service Delivery Model          
           </p>
         </Link>
 
@@ -63,17 +60,7 @@ const Navbar = () => {
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
-          ))}
-
-        <li>
-            <a
-              href="/Cesar_Napoles_CV.pdf"
-              download
-              className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 text-[18px] font-medium cursor-pointertext-white text-[18px] font-medium cursor-pointer'
-            >
-              Download CV <sup>PDF</sup>
-            </a>
-          </li>
+          ))}     
         </ul>
 
         {/* Mobile Menu */}
@@ -105,15 +92,7 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
-               <li>
-                  <a
-                    href="/Cesar_Napoles_CV.pdf"
-                    download
-                    className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 text-[18px] font-medium cursor-pointertext-white text-[18px] font-medium cursor-pointer'
-                  >
-                   <FontAwesomeIcon icon={faDownload} /> CV <sup>PDF</sup>
-                  </a>
-                </li>
+             
             </ul>
           </div>
         </div>
